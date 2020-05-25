@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"> </script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+        <script src="script.js"></script>
+
+    <a-scene>
+      <a-entity environment = "preset: forest"></a-entity>
+      <a-entity camera id = "camera" look-controls position="0 1.6 0" rotation-reader></a-entity>
+      <a-plane src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://examplemobilemoving--sn33r.repl.co/" position = "0 2 -5" scale = "3 3 1"></a-plane>
+    </a-scene>
+
+  </body>
+</html>
